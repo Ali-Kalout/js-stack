@@ -19,10 +19,6 @@ export const sayHelloAsync: any = (num: number) => async (dispatch: any) => {
     try {
         const res = await axios.get(helloEndpointRoute(num));
 
-        if (res.status !== 200) {
-            throw Error(res.statusText);
-        }
-
         if (!res.data.serverMessage) {
             throw Error('No server message');
         }
