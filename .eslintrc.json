@@ -2,7 +2,7 @@
     "extends": ["airbnb", "plugin:flowtype/recommended"],
     "plugins": ["compat", "flowtype"],
     "rules": {
-        "linebreak-style": [2, "windows"],
+        "linebreak-style": ["error", "windows"],
         "semi": [2, "always"],
         "no-unexpected-multiline": 2,
         "indent": "off",
