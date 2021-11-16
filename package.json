@@ -16,7 +16,7 @@
     "test": "eslint src && flow && jest --coverage",
     "precommit": "npm test",
     "prepush": "npm test && npm run prod:build",
-    "heroku-postbuild": "yarn prod:build"
+    "heroku-postbuild": "npm run prod:build"
   },
   "browserslist": [
     "> 1%"
