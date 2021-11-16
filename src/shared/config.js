@@ -1,6 +1,6 @@
 // @flow
 
-export const WEB_PORT: number | string = 8000 || process.env.PORT;
+export const WEB_PORT: any | any = process.env.PORT || 8000;
 export const STATIC_PATH = '/static';
 export const APP_NAME = 'Hello App';
 export const WDS_PORT = 7000;
