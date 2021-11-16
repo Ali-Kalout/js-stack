@@ -1,0 +1,22 @@
+{
+    "extends": ["airbnb", "plugin:flowtype/recommended"],
+    "plugins": ["compat", "flowtype"],
+    "rules": {
+        "linebreak-style": [2, "windows"],
+        "semi": [2, "always"],
+        "no-unexpected-multiline": 2,
+        "indent": "off",
+        "no-tabs": 0,
+        "no-console": "off",
+        "max-len": ["error", { "code": 120 }],
+        "compat/compat": 2
+    },
+    "parser": "babel-eslint",
+    "env": {
+        "jest": true,
+        "browser": true
+    },
+    "settings": {
+        "polyfills": ["fetch"]
+    }
+}
